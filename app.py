@@ -61,7 +61,7 @@ def smiles_to_fp(smiles):
 # -------------------------------
 st.set_page_config(page_title="NeuroMol AI", layout="centered")
 
-st.title("NeuroMol AI 🧠")
+st.title("NeuroMol AI")
 st.subheader("ADMET Prediction System")
 st.caption("Powered by XGBoost + RDKit")
 
