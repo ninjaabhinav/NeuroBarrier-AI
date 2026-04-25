@@ -1,150 +1,82 @@
-# 🧠 NeuroBarrier-AI
+# 🚀 NeuroBarrier-AI
 
 🔗 **Live App:** https://neurobarrier-ai.streamlit.app/
 
 ---
 
-## 🚀 Overview
+## 🧩 Problem It Solves
 
-**NeuroBarrier-AI** is an AI-powered web application designed to predict critical drug properties related to the **blood-brain barrier (BBB) permeability** and **aqueous solubility (ESOL)**.
+Drug discovery is expensive and time-consuming, with heavy reliance on laboratory testing.
 
-The application enables users to input molecular features and instantly receive predictions using trained machine learning models.
+Before moving to lab experiments, researchers need early insights into:
+- Whether a compound can cross the **blood-brain barrier (BBBP)**
+- Whether it is **soluble in water (ESOL)**
 
-Built using **Python** and deployed with **Streamlit**, this project demonstrates the real-world application of machine learning in **drug discovery and cheminformatics**.
+NeuroBarrier-AI provides instant predictions for these properties, helping reduce early-stage cost and accelerating compound screening.
+
+---
+
+## ⚙️ How It Works
+
+The system uses machine learning models trained on curated datasets of molecular (ADMET-related) features.
+
+### Workflow:
+1. User inputs molecular descriptors/features  
+2. The trained model processes the input  
+3. Predictions are generated instantly via the UI  
+
+### 🧠 Models & Tech
+
+- **BBBP Model** → Classification model  
+- **ESOL Model** → Regression model  
+
+**Built with:**
+- Python  
+- scikit-learn  
+- NumPy  
+- Pandas  
+- Joblib (model serialization)  
+- Streamlit (UI & deployment)  
+
+---
+
+## 👥 Who Would Use It
+
+- Pharmaceutical researchers for early-stage drug screening  
+- Biotech startups building drug discovery pipelines  
+- Students and researchers exploring cheminformatics and ML  
 
 ---
 
 ## 🎯 Features
 
-* 🧪 **BBBP Prediction**
-  Predicts whether a compound can cross the blood-brain barrier.
-
-* 💧 **ESOL Prediction**
-  Estimates the solubility of compounds in water.
-
-* ⚡ **Real-time Predictions**
-  Instant results through an interactive UI.
-
-* 🌐 **Deployed Web App**
-  Accessible from anywhere via browser.
+- 🧪 BBBP Prediction – Predicts blood-brain barrier permeability  
+- 💧 ESOL Prediction – Estimates aqueous solubility  
+- ⚡ Real-time Predictions – Instant results through UI  
+- 🌐 Web App – Accessible via browser  
 
 ---
 
-## 🧠 Tech Stack
+## 📊 How It Works (App Flow)
 
-* **Frontend & Deployment:** Streamlit Streamlit
-* **Backend:** Python
-* **ML Libraries:**
-
-  * scikit-learn
-  * NumPy
-  * Pandas
-* **Model Serialization:** Joblib
-* **Version Control:** Git + GitHub
-
----
-
-## 📂 Project Structure
-
-```
-NeuroBarrier-AI/
-│── app.py
-│── bbbp_model.pkl
-│── esol_model.pkl
-│── requirements.txt
-│── model.ipynb
-│── BBBP.csv
-│── ESOL.csv
-```
-
----
-
-## ⚙️ Installation & Setup
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/NeuroBarrier-AI.git
-cd NeuroBarrier-AI
-```
-
----
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### 3. Run the App Locally
-
-```bash
-streamlit run app.py
-```
-
----
-
-## 📊 How It Works
-
-1. User selects the prediction type (BBBP or ESOL)
-2. Inputs molecular features
-3. The trained ML model processes the input
-4. Prediction is displayed instantly on the UI
-
----
-
-## 🧪 Models Used
-
-* **BBBP Model:** Classification model for blood-brain barrier permeability
-* **ESOL Model:** Regression model for solubility prediction
-
-Both models are trained using curated datasets and optimized for performance.
+1. Select prediction type (BBBP or ESOL)  
+2. Input molecular features  
+3. Model processes input  
+4. Prediction displayed instantly  
 
 ---
 
 ## 🌍 Deployment
 
-This app is deployed using **Streamlit Cloud**, which allows quick and free deployment of ML apps directly from GitHub. ([Medium][1])
+This app is deployed using Streamlit Cloud, enabling fast and free deployment of ML applications directly from GitHub.
 
----
-
-## 📌 Future Improvements
-
-* 🔬 SMILES input support using RDKit
-* 📈 Model performance visualization
-* 🧠 Deep learning-based models
-* 📦 API integration for scalability
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repo and submit a pull request.
-
----
+📌 Future Improvements
+SMILES input support using RDKit
+Model performance visualization
+Deep learning-based models
+API integration for scalability
 
 ## 📬 Contact
 
-**Abhinav Mishra**
-
-* GitHub: https://github.com/your-username
-* LinkedIn: (add your profile)
-
----
-
-## ⭐ Acknowledgements
-
-* Streamlit for rapid ML app deployment
-* Open-source ML community
-
----
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
-
----
-
-[1]: https://medium.com/%40abuzar_mahmood/let-ai-do-the-work-a-k-a-rapid-deployment-using-streamlit-apps-0d290aa6908d?utm_source=chatgpt.com "Let AI do the work a.k.a. Rapid deployment using Streamlit ..."
+Abhinav Mishra
+GitHub: https://github.com/ninjaabhinav
